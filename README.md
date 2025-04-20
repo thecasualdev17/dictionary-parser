@@ -1,10 +1,10 @@
-# 📘 Dictionary Generator
+# 📘 Dictionary parser
 
-**Dictionary Generator** is a Python CLI tool for processing and exporting dictionary word lists with customizable filters, formats, and casing options.  
+**Dictionary parser** is a Python CLI tool for processing and exporting dictionary word lists with customizable filters, formats, and casing options.  
 Perfect for building vocabulary apps, language tools, or educational datasets.
 
-[![PyPI version](https://badge.fury.io/py/dictionary-generator.svg)](https://pypi.org/project/dictionary-generator/)
-[![Tests](https://github.com/thecasualdev17/dictionary_generator/actions/workflows/tests.yml/badge.svg)](https://github.com/thecasualdev17/dictionary_generator/actions)
+[![PyPI version](https://badge.fury.io/py/dictionary-parser.svg)](https://pypi.org/project/dictionary-parser/)
+[![Tests](https://github.com/thecasualdev17/dictionary_parser/actions/workflows/tests.yml/badge.svg)](https://github.com/thecasualdev17/dictionary_parser/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -25,13 +25,13 @@ Perfect for building vocabulary apps, language tools, or educational datasets.
 Install via pip:
 
 ```bash
-pip install dictionary-manager
+pip install dictionary-parser
 ```
 
 ## 🧪 Quick Usage
 
 ```bash
-dictionary-generator generate input.txt output/ --letters=a-c --format=csv --case=lower
+dictionary-parser generate input.txt output/ --letters=a-c --format=csv --case=lower
 ```
 ### Arguments:
  - input.txt — your source word list file
@@ -50,20 +50,20 @@ dictionary-generator generate input.txt output/ --letters=a-c --format=csv --cas
 Only export words starting with A, B, or C in lowercase CSV:
 
 ```bash
-dictionary-generator generate input.txt output/ --letters=a-c --format=csv --case=lower
+dictionary-parser generate input.txt output/ --letters=a-c --format=csv --case=lower
 ```
 
 Export only A and F in JSON to a single file:
 ```bash
-dictionary-generator generate input.txt output/ --letters=a,f --merge
+dictionary-parser generate input.txt output/ --letters=a,f --merge
 ```
 
 ## 📂 Directory Structure
 
 ```graphql
 
-dictionary_generator/
-├── dictionary_generator/       # Main CLI app folder
+dictionary_parser/
+├── dictionary_parser/       # Main CLI app folder
 ├── docs/                       # Docs Folder
 ├── tests/                      # Pytest unit tests
 
@@ -71,7 +71,7 @@ dictionary_generator/
 
 ## 📚 Documentation
 
-Full documentation available at: https://dictionary-generator.readthedocs.io
+Full documentation available at: https://dictionary-parser.readthedocs.io
 
 ## 🧑‍💻 Contributing
 

@@ -1,5 +1,5 @@
 
-from dictionary_generator.utils.letters import parse_letters
+from dictionary_parser.utils.letters import parse_letters
 
 def test_parse_letters_range():
     assert parse_letters("a-c") == ["a", "b", "c"]

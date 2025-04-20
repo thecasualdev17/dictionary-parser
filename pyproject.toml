@@ -1,5 +1,5 @@
 [project]
-name = "dictionary-generator"
+name = "dictionary-parser"
 version = "0.1.0"
 description = "A CLI tool for generating csv or json files from word dictionaries."
 authors = [{ name = "The Casual Dev", email = "thecasualdev@gmail.com" }]
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-dictionary-generator = "dictionary_generator.cli:app"
+dictionary-parser = "dictionary_parser.cli:app"
 
 [build-system]
 requires = ["setuptools", "wheel"]

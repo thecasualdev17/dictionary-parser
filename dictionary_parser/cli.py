@@ -5,8 +5,8 @@ from pathlib import Path
 from typing import Optional
 import requests
 
-from dictionary_generator.utils.letters import parse_letters
-from dictionary_generator.core.processor import process_words
+from dictionary_parser.utils.letters import parse_letters
+from dictionary_parser.core.processor import process_words
 
 app = typer.Typer()
 

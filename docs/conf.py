@@ -4,7 +4,7 @@ from datetime import datetime
 
 sys.path.insert(0, os.path.abspath(".."))
 
-project = "Dictionary Generator"
+project = "Dictionary parser"
 author = "The Casual Dev"
 copyright = f"{datetime.now().year}, {author}"
 release = "0.1.0"
