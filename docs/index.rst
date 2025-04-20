@@ -1,6 +1,6 @@
-.. Dictionary Generator documentation master file
+.. Dictionary parser documentation master file
 
-Dictionary Generator
+Dictionary parser
 ==============================
 
 .. toctree::

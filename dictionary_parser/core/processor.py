@@ -6,7 +6,7 @@ from pathlib import Path
 from turtledemo.penrose import start
 from typing import List, Dict
 
-from dictionary_generator.utils.case import apply_case_option
+from dictionary_parser.utils.case import apply_case_option
 
 
 def process_words(

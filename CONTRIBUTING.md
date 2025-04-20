@@ -1,17 +1,17 @@
-# Contributing to Dictionary Generator
+# Contributing to Dictionary parser
 
-🎉 Thank you for your interest in contributing to Dictionary Generator!  
+🎉 Thank you for your interest in contributing to Dictionary parser!  
 We welcome all contributions—bug reports, feature requests, documentation, and code.
 
 ## 🛠️ How to Contribute
 
 ### 1. Fork the Repository
 
-Click the **Fork** button in the top-right corner of the [GitHub repo](https://github.com/thecasualdev17/dictionary_generator) and clone your fork locally:
+Click the **Fork** button in the top-right corner of the [GitHub repo](https://github.com/thecasualdev17/dictionary_parser) and clone your fork locally:
 
 ```bash
-git clone https://github.com/thecasualdev17/dictionary_generator.git
-cd dictionary-generator
+git clone https://github.com/thecasualdev17/dictionary_parser.git
+cd dictionary-parser
 ```
 ### 2. Set Up Your Environment
 Make sure you have python 3.9+ and install the dependencies:
@@ -63,11 +63,11 @@ python -m core.cli generate examples/input.txt output/ --letters=a-c --case=uppe
 
 ## ✅ Good First Issues
 
-Check out the [Issues](https://github.com/thecasualdev17/dictionary_generator/issues) tab for labels like good first issue and help wanted.
+Check out the [Issues](https://github.com/thecasualdev17/dictionary_parser/issues) tab for labels like good first issue and help wanted.
 
 ## 💬 Community & Help
 
-Feel free to ask questions by opening a discussion or [issue](https://github.com/thecasualdev17/dictionary_generator/issues).
+Feel free to ask questions by opening a discussion or [issue](https://github.com/thecasualdev17/dictionary_parser/issues).
 
 ## Other help
 

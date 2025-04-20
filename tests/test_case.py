@@ -1,5 +1,5 @@
 
-from dictionary_generator.utils.case import apply_case_option
+from dictionary_parser.utils.case import apply_case_option
 
 def test_apply_case_option():
     assert apply_case_option("Test", "lower") == "test"
