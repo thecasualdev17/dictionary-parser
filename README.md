@@ -4,7 +4,7 @@
 Perfect for building vocabulary apps, language tools, or educational datasets.
 
 [![PyPI version](https://badge.fury.io/py/dictionary-parser.svg)](https://pypi.org/project/dictionary-parser/)
-[![Tests](https://github.com/thecasualdev17/dictionary_parser/actions/workflows/tests.yml/badge.svg)](https://github.com/thecasualdev17/dictionary_parser/actions)
+[![Tests](https://github.com/thecasualdev17/dictionary_parser/actions/workflows/python-build-test.yml/badge.svg)](https://github.com/thecasualdev17/dictionary_parser/actions/workflows/python-build-test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
