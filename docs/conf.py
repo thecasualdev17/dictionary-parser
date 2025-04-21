@@ -4,10 +4,10 @@ from datetime import datetime
 
 sys.path.insert(0, os.path.abspath(".."))
 
-project = "Dictionary parser"
+project = "dictionary-parser"
 author = "The Casual Dev"
 copyright = f"{datetime.now().year}, {author}"
-release = "0.1.0"
+release = "0.2.1"
 
 extensions = [
     "sphinx.ext.autodoc",
