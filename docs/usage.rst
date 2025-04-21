@@ -7,8 +7,8 @@ Examples:
 
 .. code-block:: bash
 
-   dictionary-parser generate input.txt out/ --letters=a-c --format=json --case=lower
-   dictionary-parser generate input.txt out/ --letters=a,c,f --merge --case=upper
+   dictionary-parser input.txt out/ --letters=a-c --format=json --case=lower
+   dictionary-parser input.txt out/ --letters=a,c,f --merge --case=upper
 
 Options:
 

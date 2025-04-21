@@ -58,7 +58,7 @@ Describe:
 ## Running the CLI locally
 Example usage from your local checkout:
 ```bash
-python -m core.cli generate examples/input.txt output/ --letters=a-c --case=upper
+dictionary-parser examples/input.txt output/ --letters=a-c --case=upper
 ```
 
 ## ✅ Good First Issues

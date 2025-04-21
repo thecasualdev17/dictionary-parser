@@ -3,7 +3,7 @@
 **Dictionary parser** is a Python CLI tool for processing and exporting dictionary word lists with customizable filters, formats, and casing options.  
 Perfect for building vocabulary apps, language tools, or educational datasets.
 
-[![PyPI version](https://badge.fury.io/py/dictionary-parser.svg)](https://pypi.org/project/dictionary-parser)
+[![PyPI version](https://badge.fury.io/py/dictionary-parser.svg)](https://badge.fury.io/py/dictionary-parser)
 [![Builds and Tests](https://github.com/thecasualdev17/dictionary-parser/actions/workflows/python-build-test.yml/badge.svg?branch=main)](https://github.com/thecasualdev17/dictionary-parser/actions/workflows/python-build-test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -31,7 +31,7 @@ pip install dictionary-parser
 ## 🧪 Quick Usage
 
 ```bash
-dictionary-parser generate input.txt output/ --letters=a-c --format=csv --case=lower
+dictionary-parser input.txt output/ --letters=a-c --format=csv --case=lower
 ```
 ### Arguments:
  - input.txt — your source word list file
@@ -50,12 +50,12 @@ dictionary-parser generate input.txt output/ --letters=a-c --format=csv --case=l
 Only export words starting with A, B, or C in lowercase CSV:
 
 ```bash
-dictionary-parser generate input.txt output/ --letters=a-c --format=csv --case=lower
+dictionary-parser input.txt output/ --letters=a-c --format=csv --case=lower
 ```
 
 Export only A and F in JSON to a single file:
 ```bash
-dictionary-parser generate input.txt output/ --letters=a,f --merge
+dictionary-parser input.txt output/ --letters=a,f --merge
 ```
 
 ## 📂 Directory Structure

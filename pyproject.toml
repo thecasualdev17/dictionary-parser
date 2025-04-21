@@ -1,6 +1,6 @@
 [project]
 name = "dictionary-parser"
-version = "0.2.0"
+version = "0.2.1"
 description = "A CLI tool for generating csv or json files from word dictionaries."
 authors = [{ name = "The Casual Dev", email = "thecasualdev@gmail.com" }]
 readme = "README.md"

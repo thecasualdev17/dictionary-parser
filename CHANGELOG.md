@@ -25,5 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated documentation to reflect changes in Github Actions, Badges, etc.
 - Added missing __main__ file
 - Switch to Poetry Core for build system
+
+## [0.2.1] - 2025-04-21
+- Updated README to match latest release version
 ---
 
