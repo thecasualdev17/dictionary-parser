@@ -7,10 +7,10 @@ We welcome all contributions—bug reports, feature requests, documentation, and
 
 ### 1. Fork the Repository
 
-Click the **Fork** button in the top-right corner of the [GitHub repo](https://github.com/thecasualdev17/dictionary_parser) and clone your fork locally:
+Click the **Fork** button in the top-right corner of the [GitHub repo](https://github.com/thecasualdev17/dictionary-parser) and clone your fork locally:
 
 ```bash
-git clone https://github.com/thecasualdev17/dictionary_parser.git
+git clone https://github.com/thecasualdev17/dictionary-parser.git
 cd dictionary-parser
 ```
 ### 2. Set Up Your Environment
@@ -63,11 +63,11 @@ python -m core.cli generate examples/input.txt output/ --letters=a-c --case=uppe
 
 ## ✅ Good First Issues
 
-Check out the [Issues](https://github.com/thecasualdev17/dictionary_parser/issues) tab for labels like good first issue and help wanted.
+Check out the [Issues](https://github.com/thecasualdev17/dictionary-parser/issues) tab for labels like good first issue and help wanted.
 
 ## 💬 Community & Help
 
-Feel free to ask questions by opening a discussion or [issue](https://github.com/thecasualdev17/dictionary_parser/issues).
+Feel free to ask questions by opening a discussion or [issue](https://github.com/thecasualdev17/dictionary-parser/issues).
 
 ## Other help
 

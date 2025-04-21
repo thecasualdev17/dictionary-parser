@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-dictionary-parser = "dictionary_parser.cli:app"
+dictionary-parser = "dictionary-parser.cli:app"
 
 [build-system]
 requires = ["setuptools", "wheel"]
