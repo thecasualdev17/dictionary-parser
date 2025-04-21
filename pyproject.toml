@@ -1,19 +1,22 @@
 [project]
 name = "dictionary-parser"
-version = "0.1.0"
+version = "0.2.0"
 description = "A CLI tool for generating csv or json files from word dictionaries."
 authors = [{ name = "The Casual Dev", email = "thecasualdev@gmail.com" }]
 readme = "README.md"
 license = { text = "MIT" }
-requires-python = ">=3.9"
+requires-python = ">=3.9,<4.0"
 dependencies = [
     "typer[all]",
     "requests"
 ]
 
+[tool.poetry]
+packages = [{include = "dictionary_parser", from = "."}]
+
 [project.scripts]
-dictionary-parser = "dictionary_parser.cli:app"
+dictionary-parser = "dictionary_parser.main:app"
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

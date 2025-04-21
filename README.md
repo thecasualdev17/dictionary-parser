@@ -3,8 +3,8 @@
 **Dictionary parser** is a Python CLI tool for processing and exporting dictionary word lists with customizable filters, formats, and casing options.  
 Perfect for building vocabulary apps, language tools, or educational datasets.
 
-[![PyPI version](https://badge.fury.io/py/dictionary-parser.svg)](https://pypi.org/project/dictionary-parser/)
-[![Tests](https://github.com/thecasualdev17/dictionary_parser/actions/workflows/python-build-test.yml/badge.svg)](https://github.com/thecasualdev17/dictionary_parser/actions/workflows/python-build-test.yml)
+[![PyPI version](https://badge.fury.io/py/dictionary-parser.svg)](https://pypi.org/project/dictionary-parser)
+[![Builds and Tests](https://github.com/thecasualdev17/dictionary-parser/actions/workflows/python-build-test.yml/badge.svg?branch=main)](https://github.com/thecasualdev17/dictionary-parser/actions/workflows/python-build-test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -62,8 +62,8 @@ dictionary-parser generate input.txt output/ --letters=a,f --merge
 
 ```graphql
 
-dictionary_parser/
-├── dictionary_parser/       # Main CLI app folder
+dictionary-parser/
+├── dictionary-parser/       # Main CLI app folder
 ├── docs/                       # Docs Folder
 ├── tests/                      # Pytest unit tests
 
