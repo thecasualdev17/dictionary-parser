@@ -34,6 +34,3 @@ def generate(
     letter_list = parse_letters(letters)
     process_words(words, letter_list, case, merge, format, output_dir)
     print('\033[K', '\rFiles have been generated.',)
-
-if __name__ == "__main__":
-    app()
