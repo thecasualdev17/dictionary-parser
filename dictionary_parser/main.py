@@ -1,4 +1,3 @@
-
 import sys
 import typer
 from pathlib import Path
@@ -10,14 +9,18 @@ from dictionary_parser.core.processor import process_words
 
 app = typer.Typer()
 
+
 @app.command()
 def generate(
-    input_path: str,
-    output_dir: Path,
-    letters: Optional[str] = typer.Option(None, "--letters", "-l", help="Filter by letters: a, a-c, a,f"),
-    case: str = typer.Option("nochange", "--case", "-c", help="Word casing: lower, upper, nochange"),
-    format: str = typer.Option("json", "--format", "-f",help="Output format: json or csv"),
-    merge: bool = typer.Option(False, "--merge", "-m",help="Export all data into one file"),
+        input_path: str,
+        output_dir: Path,
+        letters: Optional[str] = typer.Option(None, "--letters", "-l", help="Filter by letters: a, a-c, a,f"),
+        case: str = typer.Option("nochange", "--case", "-c", help="Word casing: lower, upper, nochange"),
+        format: str = typer.Option("json", "--format", "-f", help="Output format: json or csv"),
+        merge: bool = typer.Option(False, "--merge", "-m", help="Export all data into one file"),
+        metadata: Optional[str] = typer.Option(None,"--metadata", "-md",
+            help="Comma-separated list of metadata fields to include: index, global_index, length"),
+
 ):
     print(f'Processing input_path to generate a {format} file.')
     words = ''
@@ -32,5 +35,6 @@ def generate(
             words = f.read().strip().splitlines()
 
     letter_list = parse_letters(letters)
-    process_words(words, letter_list, case, merge, format, output_dir)
-    print('\033[K', '\rFiles have been generated.',)
+    metadata_fields = metadata.split(",") if metadata else []
+    process_words(words, letter_list, case, merge, format, output_dir, metadata_fields)
+    print('\033[K', '\rFiles have been generated.', )

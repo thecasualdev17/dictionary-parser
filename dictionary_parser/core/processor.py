@@ -1,9 +1,7 @@
 
-import sys
 import csv
 import json
 from pathlib import Path
-from turtledemo.penrose import start
 from typing import List, Dict
 
 from dictionary_parser.utils.case import apply_case_option
@@ -16,6 +14,7 @@ def process_words(
     merge: bool,
     output_format: str,
     output_dir: Path,
+    metadata_fields: List[str]
 ) -> Dict[str, Dict[str, int]]:
     output_dir.mkdir(parents=True, exist_ok=True)
     data_by_letter = {}
@@ -31,12 +30,14 @@ def process_words(
         for i, word in enumerate(filtered):
             original = word.strip()
             transformed = apply_case_option(original, case)
-            processed.append({
-                "word": transformed,
-                "index": i,
-                "length": len(transformed),
-                "global_index": global_index + i
-            })
+            word_data = {"word": transformed}
+            if "index" in metadata_fields:
+                word_data["index"] = str(i)
+            if "length" in metadata_fields:
+                word_data["length"] = str(len(transformed))
+            if "global_index" in metadata_fields:
+                word_data["global_index"] = global_index + i
+            processed.append(word_data)
         if processed:
             data_by_letter[letter] = {
                 "start_index": global_index,
@@ -62,7 +63,8 @@ def save_data(data: List[Dict], output_file: Path, fmt: str) -> None:
             json.dump(data, f, indent=2, ensure_ascii=False)
     elif fmt == "csv":
         with output_file.open("w", encoding="utf-8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=["word", "index", "length", "global_index"])
+            fieldnames = data[0].keys() if data else []
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(data)
     else:
