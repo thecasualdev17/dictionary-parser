@@ -1,4 +1,3 @@
-
 def parse_letters(input_str: str):
     if not input_str:
         return [chr(i) for i in range(ord('a'), ord('z') + 1)]
