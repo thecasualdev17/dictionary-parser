@@ -1,7 +1,7 @@
 API Reference
 =============
 
-.. automodule:: dictionary-parser.cli
+.. automodule:: dictionary-parser.main
    :members:
    :undoc-members:
    :show-inheritance:

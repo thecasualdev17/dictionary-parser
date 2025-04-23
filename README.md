@@ -17,6 +17,9 @@ Perfect for building vocabulary apps, language tools, or educational datasets.
 - ✅ Output to one file or split by starting letter
 - ✅ Works with local files or download from a URL
 - ✅ Fast and clean CLI powered by [Typer](https://typer.tiangolo.com)
+- ✅ Metadata support: `local_index`, `length`
+- ✅ Sort words in the output files
+- ✅ Use local index per letter instead of global index
 
 ---
 
@@ -39,12 +42,16 @@ dictionary-parser input.txt output/ --letters=a-c --format=csv --case=lower
 
 ### Options:
 
-| Option    | Description                                               |
-|-----------|-----------------------------------------------------------|
-| --letters | Letter filter: a, a-c, or a,c,f                           |
-| --format  | Output format: json (default) or csv                      |
-| --case    | Word casing: lower, upper, or nochange (default)          |
-| --merge   | Export all data into one file instead of per-letter files |
+| Option            | Description                                                             |
+|-------------------|-------------------------------------------------------------------------|
+| --letters         | Letter filter: a, a-c, or a,c,f                                         |
+| --format          | Output format: json (default) or csv                                    |
+| --case            | Word casing: lower, upper, or nochange (default)                        |
+| --merge           | Export all data into one file instead of per-letter files               |
+| --metadata        | Comma-separated list of metadata fields to include: local_index, length |
+| --use-local-index | Use local index per letter instead of global index                      |
+| --sort            | Sort words in the output files                                          |
+| --help            | Show help message and exit                                              |
 
 ## 🔍 Examples
 Only export words starting with A, B, or C in lowercase CSV:

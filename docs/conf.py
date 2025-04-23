@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath(".."))
 project = "dictionary-parser"
 author = "The Casual Dev"
 copyright = f"{datetime.now().year}, {author}"
-release = "0.2.1"
+release = "0.3.0"
 
 extensions = [
     "sphinx.ext.autodoc",
