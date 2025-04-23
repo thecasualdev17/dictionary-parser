@@ -28,5 +28,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.1] - 2025-04-21
 - Updated README to match latest release version
+
+## [0.3.0] - 2025-04-23
+### Added
+- Added support for sorting words in the output files.
+- Added support for adding metadata to the output files.
 ---
 

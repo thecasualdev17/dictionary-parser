@@ -8,7 +8,6 @@ from dictionary_parser.core.processor import process_words, save_summary
 
 app = typer.Typer()
 
-
 @app.command()
 def generate(
         input_path: str,

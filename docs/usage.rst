@@ -19,3 +19,7 @@ Options:
 - ``--format``: Output format (``json`` or ``csv``)
 - ``--case``: Word casing: ``lower``, ``upper``, or ``nochange``
 - ``--merge``: Merge all output into one file
+- ``--metadata``: Include metadata in the output: ``local_index`` or ``length``
+- ``--use_local_index``: use local index for lookups
+- ``--sort``: Sort output by word alphabetically
+- ``--help``: Show help message
