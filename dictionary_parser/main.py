@@ -17,9 +17,11 @@ def generate(
         case: str = typer.Option("nochange", "--case", "-c", help="Word casing: lower, upper, nochange"),
         format: str = typer.Option("json", "--format", "-f", help="Output format: json or csv"),
         merge: bool = typer.Option(False, "--merge", "-m", help="Export all data into one file"),
-        metadata: Optional[str] = typer.Option(None,"--metadata", "-md",
-            help="Comma-separated list of metadata fields to include: local_index, length"),
-        use_local_index: bool = typer.Option(False, "--use-local-index", help="Use local index instead of global index"),
+        metadata: Optional[str] = typer.Option(None, "--metadata", "-md",
+                                               help="Comma-separated list of metadata fields to include: local_index, length"),
+        use_local_index: bool = typer.Option(False, "--use-local-index",
+                                             help="Use local index instead of global index"),
+        sort: bool = typer.Option(False, "--sort", "-s", help="Sort words alphabetically"),
 ):
     print(f'Processing')
     words = ''
@@ -41,7 +43,8 @@ def generate(
     letter_list = parse_letters(letters)
     metadata_fields = metadata.split(",") if metadata else []
     metadata_fields.insert(0, "index")
-    data_by_letter = process_words(words, letter_list, case, merge, format, output_dir, metadata_fields, use_local_index)
+    data_by_letter = process_words(words, letter_list, case, merge, format, output_dir, metadata_fields,
+                                   use_local_index, sort)
     summary_file = output_dir / f"summary.{format}"
     save_summary(data_by_letter, summary_file, format)
     print()

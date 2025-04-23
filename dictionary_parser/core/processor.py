@@ -16,6 +16,7 @@ def process_words(
         output_dir: Path,
         metadata_fields: List[str],
         use_local_index: bool = False,
+        sort: bool = False,
 ) -> Dict[str, Dict[str, int]]:
     output_dir.mkdir(parents=True, exist_ok=True)
     data_by_letter = {}
@@ -24,11 +25,12 @@ def process_words(
     global_index = 0
     loading = ''
 
-    letters = sorted(letters)
     skipped_letters = 0
     print(f'Processing words per letter')
     for letter in letters:
         filtered = [w for w in words if w.lower().startswith(letter.lower())]
+        if sort:
+            filtered = sorted(filtered, key=lambda x: x.lower())
         processed = []
         for i, word in enumerate(filtered):
             if not validate_letters(word):
